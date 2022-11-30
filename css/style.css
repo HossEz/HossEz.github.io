@@ -14,6 +14,7 @@ body{
     background-image: url("../img/bluebackgroundd.webp"); 
     background-size: 1920px 1350px;
     background-repeat: no-repeat;
+    background-color: #C1D6EB;
 }
 
 /* HEADER */
@@ -211,6 +212,7 @@ main{
     border: 3px solid black;
     border-left: none;
     border-right: none;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );    border: 2px solid black;
     padding-bottom: 2rem;
     justify-content: space-between;
 }
@@ -241,7 +243,7 @@ article{
     flex-wrap: wrap; 
     border-radius: 2rem;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );    border: 2px solid black;
-    /* gradient hentet fra: https://cssgradient.io/gradient-backgrounds/ */
+    /* gradient hentet fra : https://cssgradient.io/gradient-backgrounds/ */ 
     box-shadow: 3px 3px 10px #000000;
     margin: 1rem;
     margin-top: 7rem;
