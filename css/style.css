@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik&display=swap');
+@font-face {
+    font-family: 'GroovyScript';
+    src: url(/custom-fonts/GroovyScript.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    /*background kilde (redigerte på den litt): https://www.freepik.com/free-vector/blue-fluid-patterned-background_15226810.htm#query=liquid%20background&position=44&from_view=keyword*/
+    background-image: url("../img/bluebackgroundd.webp"); 
+    background-size: 1920px 1350px;
+    background-repeat: no-repeat;
+    background-color: #C1D6EB;
+}
+
+/* HEADER */
+
+#logo{
+    width: 300px;
+    height: auto;
+    padding: 0rem 6rem;
+}
+
+header{
+    grid-area: header;
+}
+
+/* NAV BAR */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+
+nav ul{
+    display: flex;
+    flex-wrap:  wrap;
+    list-style-type: none;
+    text-shadow: 1px 1px #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: transform 400ms ease-in-out;
+    box-shadow: 1px 1px 10px black;
+
+}
+
+nav li a:hover{
+    background-color: #94c4f5;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+nav ul li{
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Kilde for responsiv navbar: https://www.youtube.com/watch?v=At4B7A4GOPg */
+.navtoggleBtn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    width: 3rem;
+    height: 2rem;
+}
+.navtoggleBtn .bar{
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* GRIDCONTAINER */
+
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header aside"
+        "main main main"
+        "footer footer footer";
+}
+
+#gridContainer2{
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+/* HJELP FRA W3SCHOOLS: https://www.w3schools.com/css/css_grid.asp */
+.gridContainerTabell{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+    padding: 4rem;
+}
+.gridContainerTabell2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+    display: none;
+}
+.gridContainerTabell3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+    padding: 4rem;
+}
+.gridContainerTabell4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 5rem;
+    display: none;
+}
+
+
+.gridTabell{
+    background-color: #fff;
+    padding: 20px;
+    font-size: 35px;  
+    border: 2px solid #000000;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+/* ASIDE */
+
+aside{
+    grid-area: aside;
+    margin: 13rem 1rem;
+    line-height: 2.1;
+    max-width: 360px;
+} 
+
+aside p{
+    line-height: 2.1;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+}
+
+
+aside h2{
+    font-size: 30px;
+    text-shadow: 1px 1px #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* MAIN */
+
+main{
+    grid-area: main;
+}
+
+/* SECTION */
+
+#section1{
+    margin: 14rem 9rem;
+    max-width: 1000px; 
+}
+
+#section1 h2{
+    font-size: 60px;
+    text-shadow: 1px 1px #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#section1 p{
+    font-size: 18px;
+    line-height: 2.1;
+    text-shadow: 2px 2px 7px #ffffff;
+    color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    font-weight: 600;
+
+}
+
+.page1 #section1 span{
+    color: #0171da;
+    font-family: 'GroovyScript', sans-serif;
+
+}
+
+#section2{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-left: none;
+    border-right: none;
+    background-color: #C1D6EB;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+}
+
+#section2 h2{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #ffffff;
+    color: rgb(0, 0, 0);
+}
+.page1 #section2 h2{
+    position: absolute;
+    margin-left: 2rem;
+}
+.page1 #section2 h3{
+    color: rgb(255, 255, 255);
+}
+
+/* .page1,.page2,.page3,.page4 #section2 p{
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+} */
+
+/* ARTICLE */
+
+article{
+    padding: 7rem 2rem;
+    flex-wrap: wrap; 
+    border-radius: 2rem;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );    border: 2px solid black;
+    /* gradient hentet fra: https://cssgradient.io/gradient-backgrounds/ */
+    box-shadow: 3px 3px 10px #000000;
+    margin: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 300ms ease-in-out;
+}
+
+article:hover{
+    transform: scale(1.03);
+}
+
+article h3{
+    padding-top: 2rem;
+}
+
+article p{
+    padding-bottom: 1rem;
+
+}
+
+article img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 10px #000000;
+    border: 2px solid black;
+}
+
+article iframe{
+    border-radius: 2rem;
+}
+
+#article1{
+    max-width: 510px;
+}
+#article2{
+    max-width: 510px;
+}
+#article3{
+    max-width: 510px;
+}
+
+.page1 article p,.page2 article p,.page3 article p,.page4 article p{
+    color: #fff;
+    line-height: 1.7;
+}
+.page1 article h3,.page2 article h3,.page3 article h3,.page4 article h3{
+    color: #fff;
+}
+
+
+/* TABELL TEKST */
+
+.cmsTxt{
+    font-size: 32px;
+    font-weight:bold;
+}
+
+.ForUlLikTxt{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.hovedTxt{
+    font-size: 18px;
+    line-height: 2.1;
+}
+
+
+/* BUTTON */
+
+
+.button { 
+    background-color: #363737;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px #000000;
+    border: 2px solid black;
+    transition: background-color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+
+.button:hover{
+    color: #000000;
+    /* background-color: rgb(233, 233, 233); */
+    background-color: #ffffff;
+}
+
+/* SOCIAL MEDIA */
+
+.socialMedia{
+    display: flex;
+    justify-content: right;
+    gap: .7rem;
+    position: fixed;
+    top: 80%;
+    right: 3%;
+}
+
+
+.shareBtn{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 15px rgb(85, 85, 85);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 28px;
+    line-height: 100px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.shareBtn:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.shareBtn i{
+    font-size: 38px;
+}
+.shareBtn a{
+    color: #000000;
+    text-decoration: none;
+}
+.shareBtn i{
+    padding-top: 30px;
+}
+
+.closeshareBtn{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 15px rgb(85, 85, 85);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 28px;
+    line-height: 70px;
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+.closeshareBtn a{
+    color: #000000;
+}
+
+.socialMediaBtns{
+    display: flex;
+    gap: 1rem;    
+}
+
+/* FOOTER */
+
+footer{
+    grid-area: footer;
+    background-image: url("../img/bluebackgroundd.webp"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px;
+    transition: transform 400ms ease-in-out;
+}
+
+footer a:hover{
+    background-color: #C1D6EB;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    transform: scale(1.05);
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 28px;
+    font-family: 'Bungee', cursive;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0 0;
+}
+
+
+/* KONTAKT SKJEMA */
+
+.kontaktskjema{
+    display: flex;
+    flex-direction: column;
+}
+.skjemabox{
+    margin-top: 10px;
+}
+.skjemabox input{
+    font-size: 18px;
+    padding: .6rem 0;
+    width: 80%;
+    margin: .6rem 0;
+}
+.skjemabox textarea{
+    font-size: 18px;
+    padding: 2rem 0;
+    width: 80%;
+    margin: .6rem 0;
+    resize: none;
+}
+
+.skjemabox textarea::placeholder{
+    position: absolute;
+    top: 7px;
+    left: 2px;
+}
+
+.skjemabox .button{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: 2px 2px 10px #000000;
+}
+
+
+/* INNHOLDSSIDENE */
+
+/* PAGE 2 */
+
+.page2 header{
+    margin: 7rem 0rem;
+    margin-top: 0;
+}
+.page2 #section1{
+    max-width: 850px;
+}
+.page2 #section2 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.page2 #section2 article{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    /* text-align: center; */
+    padding: 2rem;
+    margin: 1rem;
+}
+.page2 #section2 h2{
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    position: relative;
+    text-align: center;
+}
+.page2 #article1{
+    max-width: 1100px;
+}
+.page2 #article2{
+    max-width: 1100px;
+}
+.page2 #article10{
+    word-break: break-all;
+    max-width: 800px;
+    text-align: center;
+}.page2 #article10 h3{
+    font-size: 48px;
+}.page2 #article10 a{
+    color: #000000;
+}
+
+/* PAGE 3 */
+
+.page3 header{
+    margin: 14rem 0rem;
+    margin-top: 0;
+}
+.page3 #section1{
+    max-width: 850px;
+}
+.page3 #section2 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.page3 #section2 article{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+.page3 #section2 article{
+    max-width: 1100px;
+}
+.page3 #article10{
+    word-break: break-all;
+    max-width: 800px !important;
+    text-align: center;
+}
+#article10:hover{
+    transform: none;
+}
+.page3 #article10 h3{
+    font-size: 48px;
+}
+.page3 #article10 a{
+    color: #000000;
+}
+.page3 #section2 h2{
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    position: relative;
+    text-align: center;
+}
+
+/* PAGE 4 */
+
+.page4 #section2 {
+    flex-direction: column;
+    align-items: center;
+}
+.page4 #section2 article{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+.page4 #section2 h2{
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    position: relative;
+}
+.page4 #section2 article{
+    max-width: 1100px;
+}
+
+/* PAGE 5 */
+
+.page5 #article1 {
+    max-width: 800px;
+    padding: 3rem 3rem;
+}
+.page5 header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.page5 #section1{
+    margin: 9rem 2rem;
+    margin-top: 0;  
+}
+.page5 #section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+.page5 iframe{
+    height: 500px;
+    width: 500px;
+    max-width:100%;
+}
+
+.kontaktinfo{
+    display: flex;
+    flex-direction: column;
+}
+.kontakt{
+    display: flex;
+}
+.ikon{
+    height: 50px;
+    min-width: 50px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 4px;
+}
+.tekst {
+    display: flex;
+    color: #000000;
+    margin-left: 15px;
+    font-size: 18px;
+    flex-direction: column;
+    line-height: 1;
+}
+
+
+.kontakt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 2rem;
+}
+
+/* MEDIA QUERIES / BREAKPOINTS */
+
+/* GRIDEN ENDRES. ASIDE GÅR UNDER HEADER AREA. gridContainer2 ER GRIDEN FOR INNHOLDSSIDENE, SIDEN DE HAR IKKE ASIDE*/
+
+@media only screen and (max-width:1560px) {
+    #gridContainer{
+        grid-template-areas: "nav"
+                             "header"
+                             "aside"
+                             "main"
+                             "footer";
+    }
+
+    #gridContainer2{
+        grid-template-areas: "nav"
+                             "header"
+                             "main"
+                             "footer";
+    }
+    
+    aside{
+        margin: 2rem 9rem;
+        margin-top: 0;
+        text-shadow: 1px 1px 2px #ffffff;
+    }
+    .button{
+        text-shadow: none;
+    }
+    /* BAKGRUNNSBILDE TRANSITION */
+    body{
+        /* KILDE FOR TRANSITION: https://stackoverflow.com/questions/4411306/transition-of-background-color */
+        background-size: 1600px 1400px;
+        -webkit-transition: background-size 1000ms linear;
+        -ms-transition: background-size 1000ms linear;
+        transition: background-size 1000ms linear;
+    }
+
+    body{
+        background-size: 1600px 1820px;
+
+    }
+}
+
+/* GJØR TABELLEN MER MOBILVENNLIG */
+
+@media only screen and (max-width:950px) {
+    .gridContainerTabell{
+        display: none;
+    }
+    .gridContainerTabell2{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 4rem;
+    }
+    .gridContainerTabell3{
+        display: none;
+    }
+    .gridContainerTabell4{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 4rem;
+    }
+    
+}
+
+/* GJØR NETTSIDEN MER MOBILVENNLIG */
+
+@media only screen and (max-width:687px) {
+    #section1{
+        margin: 3rem 7rem;
+        margin-left: 2rem;
+    }
+    
+    #section1 h2{
+        font-size: 50px;
+        text-shadow: 1px 1px #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    
+    #section1 p{
+        font-size: 18px;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    
+    }
+    aside{
+        grid-area: aside;
+        margin: 2rem 1rem;
+        margin-left: 2rem;
+
+    }
+
+    nav{
+        padding: 0;
+    }
+    nav ul{
+        padding: 0.8rem;
+    }
+
+    #logo{
+        padding: 2rem;
+    }
+
+    footer a{
+        font-size: 22px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+
+    .page5 header{
+        text-align: left;
+        margin: 3rem 7rem;
+        margin-left: 2rem;
+    }
+    .shareBtn{
+        width: 5rem;
+        height: 5rem;
+    }
+    .shareBtn:hover{
+        /* FJERNET HOVER PÅ MOBIL SIDEN JEG SER IKKE POENGET MED DET */
+        width: 5rem;
+    }
+    .shareBtn i{
+        padding-top: 0px;
+    }
+
+    .closeshareBtn{
+        width: 3rem;
+        height: 3rem;
+        line-height: 53px;
+    }
+
+    .navbar{
+        margin: 0;
+    }
+
+    .kontakt-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width:422px) {
+    .page5 #article1{
+        margin-top: 10rem;
+    }
+}
+@media only screen and (max-width:353px) {
+    .page5 #article1{
+        margin-top: 12rem;
+    }
+}
+
+
+@media only screen and (max-width:475px) {
+    #logo{
+        height: auto;
+        width: 190px;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:345px) {
+    #logo{
+        height: auto;
+        width: 140px;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #logo{
+        height: auto;
+        width: 110px;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:1368px) {
+        /* Kilde for responsiv navbar: https://www.youtube.com/watch?v=At4B7A4GOPg */
+
+        .navtoggleBtn{
+            display: flex;
+            margin: 4rem 3rem;
+        }
+        .navbars{
+            display: none;
+            padding-top: 2rem;
+            margin: 0rem 3rem;
+        }
+        .navbar{
+            flex-direction: column;
+        }
+        .navbars ul{
+            flex-direction: column;
+            width: 100%;
+        }
+        .navbars li{
+            padding: 3px;
+    
+        }
+        .navbars.active{
+            display: flex;
+        }
+
+        nav{
+            /* display: flex gjorde at hele navbaren ble linket til index.html (kun logo skal være linket).
+            Derfor fjernet jeg display: flex */
+            display: inline-block;
+        }
+
+        
+        /* #section1{
+            margin: 2rem 9rem;
+        } */
+}
+
+
+/* BAKGRUNNSBILDE TRANSITION */
+
+@media only screen and (min-width:1560px) {
+    body{
+        -webkit-transition: background-size 1000ms linear;
+        -ms-transition: background-size 1000ms linear;
+        transition: background-size 1000ms linear;
+    }
+}
+
+/* BAKGRUNNSBILDE JUSTERER SEG TIL */
+
+@media only screen and (max-width:1198px) {
+    body{
+        background-size: 1600px 1720px;
+
+    }
+}
+
+@media only screen and (max-width:1230px) {
+    body{
+        background-size: 1600px 2000px;
+
+    }
+}
+
+
+@media only screen and (max-width:944px) {
+    body{
+        background-size: 1600px 2200px;
+
+    }
+}
+
+@media only screen and (max-width:840px) {
+    body{
+        background-size: 1600px 2200px;
+
+    }
+}
+
+@media only screen and (max-width:783px) {
+    body{
+        background-size: 1600px 2400px;
+
+    }
+}
+
+@media only screen and (min-width:1933px) {
+    body{
+        background-size: 2500px 1200px;
+
+    }
+}
+
+@media only screen and (min-width:2478px) {
+    body{
+        background-size: 2900px 1200px;
+
+    }
+}
+
+@media only screen and (min-width:3716px) {
+    body{
+        background-size: 3900px 1200px;
+
+    }
+}
+
+@media only screen and (min-width:5574px) {
+    body{
+        background-size: 6000px 1200px;
+
+    }
+}
+
+@media only screen and (min-width:7432px) {
+    body{
+        background-size: 8500px 1400px;
+
+    }
+}
