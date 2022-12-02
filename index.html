@@ -7,7 +7,16 @@
         <meta name="description" content="Les om UU vs SEO, CMS & Analyse">
         <meta name="keywords" content="UU, SEO, CMS, Analyse">
         <meta name="author" content="Husein Alkhastov">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- KORT FOR FACEBOOK -->
+        <meta property="og:url" content="https://itstud.hiof.no/~huseinra/Deleksamen4/index.html">
+        <meta property="og:title" content="Hovedside">
+        <meta property="og:description" content="Nettside som forklarer nyttig informasjon om Webutvikling">
+        <meta property="og:image" content="https://itstud.hiof.no/~huseinra/Deleksamen4/img/logo.webp">
+        <!-- KORT FOR TWITTER -->
+        <meta property="twitter:url" content="https://itstud.hiof.no/~huseinra/Deleksamen4/index.html">
+        <meta property="twitter:title" content="Hovedside">
+        <meta property="twitter:description" content="Nettside som forklarer nyttig informasjon om Webutvikling">
+        <meta property="twitter:image" content="https://itstud.hiof.no/~huseinra/Deleksamen4/img/logo.webp">
         <title>Deleksamen 4: Hjem</title>
         <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -18,7 +27,7 @@
     <div id="gridContainer">
         <!-- Kilde for responsiv navbar: https://www.youtube.com/watch?v=At4B7A4GOPg -->
             <nav class="navbar">
-                <a href="index.html"><img id="logo" src="img/logo.webp" alt="LOGO"></a>
+                <a href="index.html"><img id="logo" src="img/logo.webp" alt="Nettside Logo"></a>
                 <a href="#" class="navtoggleBtn" aria-label="Nav Toggle Bar">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -48,24 +57,24 @@
         </aside>
         <main>
         <section id="section2">
-            <h2>Artikler</h2>
+            <h2>Våres Artikler!</h2>
             <article id="article1">
-                <img loading="lazy" src="img/bildebank/ben-kolde-bs2Ba7t69mM-unsplashh.webp" alt="ARTICLE BILDE">
+                <img loading="lazy" src="img/bildebank/ben-kolde-bs2Ba7t69mM-unsplashh.webp" alt="UU vs SEO Artikkel Bilde">
                 <h3>UU vs SEO</h3>
                 <p>UU er en forkortelse for universell utforming, og
                     SEO er en forkortelse for search engine optimization.</p>
                 <a class="button" href="uuvsseo.html">Les mer</a>
             </article>
             <article id="article2">
-                <img loading="lazy" src="img/bildebank/kirsten-drew-Teo3_ha3YI0-unsplash.webp" alt="ARTICLE BILDE">
+                <img loading="lazy" src="img/bildebank/kirsten-drew-Teo3_ha3YI0-unsplash.webp" alt="CMS Artikkel Bilde">
                 <h3>CMS</h3>
                 <p>«Content Management System», også kjent som CMS, er et system som hjelper brukere med å lage, administrere og endre innhold på nettsiden deres.</p>
                 <a class="button" href="cms.html">Les mer</a>
             </article>
             <article id="article3">
-                <img loading="lazy" src="img/bildebank/lautaro-andreani-xkBaqlcqeb4-unsplash.webp" alt="ARTICLE BILDE">
+                <img loading="lazy" src="img/bildebank/lautaro-andreani-xkBaqlcqeb4-unsplash.webp" alt="Analyse Artikkel Bilde">
                 <h3>Analyse</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Ved hjelp av forskjellige analyse verktøy, som Lighthouse og Wave, så har vi funnet ut om nettsiden våres har god SEO og UU, og eventuelt endret på det som ikke er bra.</p>
                 <a class="button" href="analyse.html">Les mer</a>
             </article>
         </section>
@@ -73,7 +82,9 @@
     <section class="socialMedia">
         <!-- La til social media close button siden den kan skjule innhold for f.eks. mobil brukere -->
         <div class="closeshareBtn">
+            <a href="#" onclick="return false" aria-label="Lukk delings knapper"> <!--la in dette for å gjøre closeshareBtn knappen være brukbar for tastatur brukere, altså gjøre den tabbable-->
             <i class="fa-solid fa-chevron-right"></i><span></span>
+            </a>
         </div>
     <div class="socialMediaBtns">
         <div class="shareBtn">

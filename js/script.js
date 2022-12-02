@@ -14,10 +14,10 @@ const shareBtn = document.getElementsByClassName("socialMediaBtns")[0]
 closeshareBtn.addEventListener("click", ()=> {
     if(shareBtn.style.display === "none"){
         shareBtn.style.display = "flex";
-        closeshareBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+        closeshareBtn.innerHTML = '<a href="#" onclick="return false"><i class="fa-solid fa-chevron-right"></i></a>'; //<a href="#" onclick="return false"> for å gjøre den tabbable for tastatur brukere
     } else {
         shareBtn.style.display = "none";
-        closeshareBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+        closeshareBtn.innerHTML = '<a href="#" onclick="return false"><i class="fa-solid fa-chevron-left"></i></a>';
 
     }
 })

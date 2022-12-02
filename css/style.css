@@ -79,7 +79,7 @@ nav ul li{
     justify-content: space-between;
     position: absolute;
     top: .75rem;
-    right: 1rem;
+    right: 0;
     width: 3rem;
     height: 2rem;
 }
@@ -193,18 +193,16 @@ main{
 #section1 p{
     font-size: 18px;
     line-height: 2.1;
-    text-shadow: 2px 2px 7px #ffffff;
+    /* text-shadow: 2px 2px 7px #ffffff; */
     color: rgb(0, 0, 0);
     padding-bottom: 1rem;
     font-weight: 600;
 }
 
 .page1 #section1 span{
-    color: #0171da;
+    color: #0131A2;
     font-family: 'GroovyScript', sans-serif;
-
 }
-
 #section2{
     display: flex;
     flex-wrap: wrap;
@@ -230,19 +228,14 @@ main{
     color: rgb(255, 255, 255);
 }
 
-/* .page1,.page2,.page3,.page4 #section2 p{
-    color: rgb(255, 255, 255);
-    line-height: 1.7;
-} */
-
 /* ARTICLE */
 
 article{
     padding: 7rem 2rem;
     flex-wrap: wrap; 
     border-radius: 2rem;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );    border: 2px solid black;
-    /* gradient hentet fra : https://cssgradient.io/gradient-backgrounds/ */ 
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 68, 255, 0.98) 0.1%, rgba(0,7,128,1) 99.8% );    border: 2px solid black;
+    /* gradient hentet fra, men endret litt på den for å være sikker på at contrast ratio er på minst 7:1: https://cssgradient.io/gradient-backgrounds/ */ 
     box-shadow: 3px 3px 10px #000000;
     margin: 1rem;
     margin-top: 7rem;
@@ -257,7 +250,7 @@ article:hover{
 }
 
 article h3{
-    padding-top: 2rem;
+    margin-top: 3rem;
 }
 
 article p{
@@ -272,10 +265,6 @@ article img{
     border-radius: 2rem;
     box-shadow: 2px 2px 10px #000000;
     border: 2px solid black;
-}
-
-article iframe{
-    border-radius: 2rem;
 }
 
 #article1{
@@ -293,6 +282,9 @@ article iframe{
     line-height: 1.7;
 }
 .page1 article h3,.page2 article h3,.page3 article h3,.page4 article h3{
+    color: #fff;
+}
+#article10 a{
     color: #fff;
 }
 
@@ -336,6 +328,11 @@ article iframe{
     /* background-color: rgb(233, 233, 233); */
     background-color: #ffffff;
 }
+
+.page2 #section2 .button, .page3 #section2 .button, .page4 #section2 .button{
+    margin-top: 4rem;
+}
+
 
 /* SOCIAL MEDIA */
 
@@ -421,15 +418,18 @@ footer a{
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 5px;
     transition: transform 400ms ease-in-out;
+    box-shadow: 2px 2px 5px #000000;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #0034df;
 }
 
 footer a:hover{
-    background-color: #C1D6EB;
+    background-color: #fff;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    border-radius: 12px;
+    border-radius: 8px;
     transform: scale(1.05);
 }
 
@@ -529,8 +529,9 @@ footer p{
     text-align: center;
 }.page2 #article10 h3{
     font-size: 48px;
-}.page2 #article10 a{
-    color: #000000;
+}
+.page2 #article10 p a{
+    color: #fff;
 }
 
 /* PAGE 3 */
@@ -569,9 +570,6 @@ footer p{
 .page3 #article10 h3{
     font-size: 48px;
 }
-.page3 #article10 a{
-    color: #000000;
-}
 .page3 #section2 h2{
     margin-bottom: 1rem;
     margin-left: 0rem;
@@ -579,35 +577,59 @@ footer p{
     text-align: center;
 }
 
+.page3 #article10 p a{
+    color: #fff;
+}
+
 /* PAGE 4 */
 
+.page4 header{
+    margin: 1rem 0;
+    margin-top: 0;
+}
 .page4 #section2 {
     flex-direction: column;
     align-items: center;
+    display: flex;
+
 }
 .page4 #section2 article{
-    display: flex;
     justify-content: center;
     font-size: 18px;
     text-align: center;
     padding: 2rem;
     margin: 1rem;
+    gap: 2rem;
+
 }
 .page4 #section2 h2{
     margin-bottom: 1rem;
     margin-left: 0rem;
     position: relative;
+    text-align: center;
+
 }
+
 .page4 #section2 article{
     max-width: 1100px;
+}
+.page4 article img{
+    object-fit: contain;
+    height: 500px;
+    max-width: 500px;
+    border: none;
+    box-shadow: none;    
+}
+.page4 #section2 .gridContainerTabell img,.gridContainerTabell2 img{
+    max-width: 100%;
+}
+
+.page4 #section2 .HER{
+    color: red;
 }
 
 /* PAGE 5 */
 
-.page5 #article1 {
-    max-width: 800px;
-    padding: 3rem 3rem;
-}
 .page5 header{
     display: flex;
     justify-content: center;
@@ -655,7 +677,6 @@ footer p{
     line-height: 1;
 }
 
-
 .kontakt-container{
     display: flex;
     justify-content: center;
@@ -663,6 +684,7 @@ footer p{
     gap: 4rem;
     margin: 0 2rem;
 }
+
 
 /* MEDIA QUERIES / BREAKPOINTS */
 
@@ -687,7 +709,6 @@ footer p{
     aside{
         margin: 2rem 9rem;
         margin-top: 0;
-        text-shadow: 1px 1px 2px #ffffff;
     }
     .button{
         text-shadow: none;
@@ -776,8 +797,8 @@ footer p{
 
     .page5 header{
         text-align: left;
-        margin: 3rem 7rem;
-        margin-left: 2rem;
+        margin: 0 5rem;
+        margin-left: 0;
     }
     .shareBtn{
         width: 5rem;

@@ -18,7 +18,7 @@
     <div id="gridContainer2">
         <!-- Kilde for responsiv navbar: https://www.youtube.com/watch?v=At4B7A4GOPg -->
         <nav class="navbar">
-            <a href="index.html"><img id="logo" src="img/logo.webp" alt="LOGO"></a>
+            <a href="index.html"><img id="logo" src="img/logo.webp" alt="Nettside Logo"></a>
             <a href="#" class="navtoggleBtn" aria-label="Nav Toggle Bar">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -37,43 +37,142 @@
         <header>
             <section id="section1">
                 <h2>Analyse</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis elit et lectus viverra efficitur. Morbi suscipit dolor et venenatis luctus. Fusce pulvinar erat mauris, ut placerat orci feugiat at. Praesent ipsum ipsum, lobortis at purus sed, vulputate pretium metus. Vivamus risus enim, egestas nec lacus sit amet, dictum varius purus. Pellentesque sed imperdiet magna. In hac habitasse platea dictumst.</p>
+                <p>Vi har gjennomført en Analyse av vår egen nettside. Det er viktig for en webutvikler å vite om nettsiden deres har god SEO og UU. Ved hjelp av forskjellige analyse verktøy, som Lighthouse og Wave, så har vi funnet ut om nettsiden våres har god SEO og UU, og eventuelt endret på det som ikke er bra.</p>
                 <a class="button" href="#section2">Les mer!</a>
             </section>
         </header>
         <main>
         <section id="section2">
-            <h2>Analyse</h2>
+            <h2>Lighthouse Desktop Analyse</h2>
             <article id="article1">
-                <img src="img/bildebank/lautaro-andreani-xkBaqlcqeb4-unsplash.webp" alt="ARTICLE BILDE">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <img src="img/1kVEMuL.webp" alt="Før Hjemside Lighthouse Artikkel Bilde">
+                <img src="img/0WQF4fR.webp" alt="Etter Hjemside Lighthouse Artikkel Bilde">
+                <h3>Hjemside Lighthouse score</h3>
+                <p>Bilde over til venstre er Lighthouse Desktop FØR jeg endret og gjorde Performance, Accessibility, Best Practises og SEO bedre. Bildet over til høyre er ETTER jeg endret og gjorde de bedre. Dette gjelder også for de andre artiklene under.
+                    <br>
+                    <br>Som man kan se, så var det ikke så mye å endre på. Jeg fokuserte mest på Accessibility og SEO, men siden Performance og Best Practises var så høy allerede var det ikke mye å fikse/endre på.
+                    Det eneste som gjorde SEO dårligere var "Meta description", altså at dokumentet ikke hadde "Meta description". Dette var lett å fikse, og alt jeg trengte å gjøre var å sette inn meta-taggene i head.
+                    Som f.eks. meta name = "description" content="Les om UU vs SEO, CMS & Analyse". Det var også noe som gjorde Performance dårligere som var ganske lett å fikse, og det var nemlig å konvertere png/jpg filer til webp format. Dette gjør at det blir lettere å loade inn på siden.
+                    Opprinnelig hadde jeg fontawesome lagret i nettside mappen min. Dette hadde en stor innvirkning på Performance, så isteden for å ha alt lagret i mappen brukte jeg heller "script" linjen plassert i head som jeg fant på fontawesome sin side for å linke.
                 </p>
-                <!-- <a id="button" href="uuvsseo.html">Les mer</a> -->
             </article>
             <article id="article2">
-                <img src="#" alt="ARTICLE BILDE">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <img src="img/OFlIw0V.webp" alt="Før UU vs SEO Lighthouse Artikkel Bilde">
+                <img src="img/5Uusmzg.webp" alt="Etter UU vs SEO Lighthouse Artikkel Bilde">
+                <h3>UU vs SEO Lighthouse score</h3>
+                <p>På UU vs SEO siden var det heller ikke så mye å endre på. Man kan se at Accessibility blir litt dårligere, og feilen her var en kontrast feil.
+                    Helt nederst på siden var det satt inn kilder, men tekst fargen og bakgrunnsfargen var en dårlig match. Bakgrunnsfargen og tekst fargen var begge mørke, mørkeblå og svart. Dette var lett å fikse, bare å endre på tekst fargen.
                 </p>
-                <!-- <a id="button" href="cms.html">Les mer</a> -->
             </article>
             <article id="article3">
-                <img src="img/bildebank/ux-indonesia-qC2n6RQU4Vw-unsplash.webp" alt="ARTICLE BILDE">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <img src="img/RFxSZb3.webp" alt="Før CMS Lighthouse Artikkel Bilde">
+                <img src="img/TFasaQ8.webp" alt="Etter CMS Lighthouse Artikkel Bilde">
+                <h3>CMS Lighthouse score</h3>
+                <p>På CMS siden var Lighthouse helt lik UU vs SEO siden. Jeg gjorde akkurat det samme for å gjøre Lighthouse poengsummen bedre. Altså fikse på kontrast feilen, konvertere png/jpg til webp og linke fontawesome på en annerledes måte.
                 </p>
-                <!-- <a id="button" href="analyse.html">Les mer</a> -->
             </article>
+            <article id="article4">
+                <img src="img/u61Sfta.webp" alt="Før Analyse Lighthouse Artikkel Bilde">
+                <img src="img/dsDd6P2.webp" alt="Etter Analyse Lighthouse Artikkel Bilde">
+                <h3>Analyse Lighthouse score</h3>
+                <p>På denne siden vi er på nå, Analyse siden var Lighthouse lik Hjemside Lighthouse poengsummen. SEO gikk til 100 siden vi allerede hadde fikset "meta description" feilen. Fontawesome hadde vi allerede fikset ved å linke det på en annerledes måte, som gjorde Performance mye bedre, også til slutt var det å konverte alle jpg/png bildene til webp.
+
+                </p>
+            </article>
+            <article id="article5">
+                <img src="img/ZlrNIDM.webp" alt="Før Kontakt Oss Lighthouse Artikkel Bilde">
+                <img src="img/fbqSh4O.webp" alt="Etter Kontakt Oss Lighthouse Artikkel Bilde">
+                <h3>Kontakt oss Lighthouse score</h3>
+                <p>Helt til slutt var det Kontakt oss siden, som også hadde helt lik Lighthouse poengsum som Analyse. Alle feilene har vi allerede fikset på, som meta description, fontawesome linking og png/jpg til webp format. Dette fikk Lighthouse poengsummen til 100.
+
+                </p>
+            </article>
+            <h2>Lighthouse Mobil Analyse</h2>
+            <div class="gridContainerTabell">
+                <div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Før</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Etter</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Endringer</div></div>
+                <div class="gridTabell"><div class="cmsTxt">Performance</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/D812L8B.webp" alt="Før Performance Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/tPw4iy9.webp" alt="Etter Performance Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Slettet Fontawesome filene lagret i nettside mappen og linket det på en mye bedre måte, som øker Performance.</li><li>Konverterte alle PNG og JPG filer til WebP. WebP-filer er mye mindre som gjør nettstedet raskere.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">Accessibility</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/yWbVQS4.webp" alt="Før Accessibility Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/vPKcNcf.webp" alt="Etter Accessibility Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Dårlig kontrastforhold. Mørkeblå bakgrunnsfarge med svart tekst. Fikset ved å bytte svarte teksten til hvit.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">SEO</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BjlWUEc.webp" alt="Før SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/tpSivH9.webp" alt="Etter SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Manglet Meta Description, som plasseres i head-taggen. La inn det og fikk 100 SEO.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">Best Practises</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BMoAcii.webp" alt="Før SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BMoAcii.webp" alt="Etter SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Best Practises har alltid vært på 100, så ingenting å endre på her.</ul></div></div>
+            </div>
+            <div class="gridContainerTabell2">
+                <div></div>
+                <div class="gridTabell"><div class="cmsTxt">Performance</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Før</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/D812L8B.webp" alt="Før Performance Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Etter</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/tPw4iy9.webp" alt="Etter Performance Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Endringer</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Slettet Fontawesome filene lagret i nettside mappen og linket det på en mye bedre måte, som øker Performance.</li><li>Konverterte alle PNG og JPG filer til WebP. WebP-filer er mye mindre som gjør nettstedet raskere.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">Accessibility</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Før</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/yWbVQS4.webp" alt="Før Accessibility Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Etter</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/vPKcNcf.webp" alt="Etter Accessibility Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Endringer</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Dårlig kontrastforhold. Mørkeblå bakgrunnsfarge med svart tekst. Fikset ved å bytte svarte teksten til hvit.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">SEO</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Før</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BjlWUEc.webp" alt="Før SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Etter</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/tpSivH9.webp" alt="Etter SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Endringer</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Manglet Meta Description, som plasseres i head-taggen. La inn det og fikk 100 SEO.</li></ul></div></div>
+                <div class="gridTabell"><div class="cmsTxt">Best Practises</div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Før</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BMoAcii.webp" alt="Før SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Etter</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><img src="img/BMoAcii.webp" alt="Etter SEO Lighthouse Tabell Bilde"></div></div>
+                <div class="gridTabell"><div class="ForUlLikTxt">Endringer</div></div>
+                <div class="gridTabell"><div class="hovedTxt"><ul><li>Best Practises har alltid vært på 100, så ingenting å endre på her.</ul></div></div>
+            </div>
+            <article id="article10">
+                <h3>Tilgjengelighetserklæring</h3>
+                <p>
+                Tilgjengelighetserklæring har blitt fylt ut. Trykk <a class="HER" href="Tilgjengelighetserklæring/Tilgjengelighetserklæring.pdf" target="_blank"><span>HER</span></a> for å åpne den!
+                </p>
+                <h3>
+                AAA Krav (ikke i malen)
+                </h3>
+                <p>
+                <b>2.3.2 Tre glimt</b>
+                <br>AAA - Nettsiden har ikke innhold som glimter mer enn tre ganger i løpet av ett sekund.
+                <br>
+                <br><b>1.4.6 Kontrast</b>
+                <br>AAA -  All tekst på nettsiden har et kontrastforhold på minst 7:1.
+                <br>
+                <br><b>2.4.10 Deloverskrifter</b>
+                <br>Deloverskrifter har blitt brukt til å organisere innholdet i seksjoner.
+                <br>
+                <br><b>2.1.3 Tastatur</b>
+                <br>All funksjonalitet kan brukes kun med tastatur.
+                </p>
+                                
+            </article>
+            <a class="button" href="#top">Ta meg tilbake til toppen!</a>
         </section>
     </main>
     <section class="socialMedia">
         <!-- La til social media close button siden den kan skjule innhold for f.eks. mobil brukere -->
         <div class="closeshareBtn">
+            <a href="#" onclick="return false" aria-label="Lukk delings knapper"> <!--la inn dette for å gjøre closeshareBtn knappen være brukbar for tastatur brukere, altså gjøre den tabbable-->
             <i class="fa-solid fa-chevron-right"></i><span></span>
+            </a>
         </div>
     <div class="socialMediaBtns">
         <div class="shareBtn">
