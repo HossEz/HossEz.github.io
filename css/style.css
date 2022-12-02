@@ -626,6 +626,10 @@ footer p{
 
 .page4 #section2 .HER{
     color: red;
+    transition: font-size 500ms ease-in-out;
+}
+.page4 #section2 .HER:hover{
+    font-size: 22px;
 }
 
 /* PAGE 5 */
